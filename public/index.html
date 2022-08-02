@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Socket IO</title>
+  </head>
+  <body>
+    <form action="chat.html">
+      <div class="container">
+        <div class="row">
+          <select name="select_room" id="select_room">
+            <option value="-1">Selecione a sala</option>
+            <option value="node">Node</option>
+            <option value="java">Java</option>
+            <option value="reactjs">ReactJS</option>
+            <option value="elixir">Elixir</option>
+          </select>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Chat simples</title>
-</head>
+        <div class="row">
+          <label for="form-label">Digite seu usuário</label>
+          <input type="text" name="username" placeholder="Username" />
+        </div>
 
-<body>
-    <h1>Chat simple</h1>
-    <form action="chat" method="post" class="from-sala">
-        <div class="inputs">
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" autocomplete="off" required>
+        <div class="row">
+          <button type="submit" class="btn btn-primary mb-3">Entrar</button>
         </div>
-        <div class="inputs">
-            <label for="sala">Sala:</label>
-            <input type="text" name="sala" id="sala" autocomplete="off" required>
-        </div>
-        <div class="button">
-            <input type="submit" value="Entrar">
-        </div>
+      </div>
     </form>
-</body>
-
+  </body>
 </html>
